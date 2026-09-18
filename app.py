@@ -284,7 +284,13 @@ async def convert_html_str_to_pdf_bytes(html_content: str, scale: float = 1.0) -
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page()
+        
+        # Set HTML content
         await page.set_content(html_content, wait_until="networkidle")
+        
+        # Explicitly wait for all fonts to finish loading
+        await page.evaluate("document.fonts.ready")
+        
         pdf_bytes = await page.pdf(
             format="A4",
             print_background=True,
