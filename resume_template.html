@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ resume.header.name }} - Resume</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333333;
+    background-color: #f4f4f4;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .resume-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .header {
+    background-color: #1e293b !important;
+    color: #ffffff;
+    padding: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-content { flex-grow: 1; }
+  .header h1 { font-size: 22px; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; color: #ffffff; }
+  .header h2 { font-size: 13.5px; font-weight: 400; color: #94a3b8; margin-bottom: 12px; }
+  .contact-info { font-size: 11.5px; color: #cbd5e1; display: flex; gap: 18px; flex-wrap: wrap; }
+  .profile-photo {
+    width: 95px; height: 95px; border-radius: 50%; object-fit: cover;
+    border: 2px solid #cbd5e1; margin-left: 20px; flex-shrink: 0; background-color: #ffffff;
+  }
+  .main-body { display: flex; width: 100%; }
+  .left-column {
+    width: 32%; background-color: #f8fafc !important;
+    border-right: 1px solid #e2e8f0; padding: 22px 18px; flex-shrink: 0;
+  }
+  .right-column { width: 68%; padding: 22px 28px; background-color: #ffffff; flex-grow: 1; }
+  .section-title {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px;
+    font-weight: 700; color: #0f172a; border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .sidebar-section { margin-bottom: 20px; }
+  .edu-item { margin-bottom: 12px; }
+  .edu-degree { font-weight: 600; font-size: 11.5px; color: #1e293b; line-height: 1.3; }
+  .edu-school { font-size: 10.5px; color: #64748b; margin-top: 2px; }
+  .edu-date { font-size: 10px; color: #94a3b8; margin-top: 2px; }
+  .skill-group { margin-bottom: 10px; }
+  .skill-group-title { font-weight: 600; font-size: 11px; color: #334155; margin-bottom: 3px; }
+  .skill-list { font-size: 10.5px; color: #475569; list-style: none; }
+  .skill-list li { margin-bottom: 3px; position: relative; padding-left: 9px; line-height: 1.35; }
+  .skill-list li::before { content: "•"; position: absolute; left: 0; color: #94a3b8; }
+  .summary { font-size: 11px; color: #475569; line-height: 1.45; margin-bottom: 16px; }
+  .job { margin-bottom: 16px; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+  .job-title { font-size: 13px; font-weight: 700; color: #1e293b; }
+  .job-date { font-size: 10.5px; color: #64748b; font-weight: 500; }
+  .job-company { font-size: 11px; font-weight: 600; color: #2563eb; margin-bottom: 5px; }
+  .job-bullets { list-style-type: disc; padding-left: 15px; }
+  .job-bullets li { font-size: 10.5px; color: #334155; margin-bottom: 4px; line-height: 1.4; }
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    body { background-color: #ffffff; }
+    .resume-container { width: 100%; max-width: 100%; box-shadow: none; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="resume-container">
+  
+  <header class="header">
+    <div class="header-content">
+      <h1>{{ resume.header.name }}</h1>
+      <h2>{{ resume.header.title }}</h2>
+      <div class="contact-info">
+        <span>✉ {{ resume.header.email }}</span>
+        <span>☎ {{ resume.header.phone }}</span>
+        <span>📍 {{ resume.header.location }}</span>
+      </div>
+    </div>
+    {% if photo_path %}
+    <img src="{{ photo_path }}" alt="{{ resume.header.name }}" class="profile-photo">
+    {% endif %}
+  </header>
+
+  <div class="main-body">
+    
+    <aside class="left-column">
+      
+      <div class="sidebar-section">
+        <div class="section-title">Education</div>
+        {% for edu in resume.education %}
+        <div class="edu-item">
+          <div class="edu-degree">{{ edu.degree }}</div>
+          <div class="edu-school">{{ edu.institution }}</div>
+          <div class="edu-date">{{ edu.year }}</div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="sidebar-section">
+        <div class="section-title">Skills</div>
+        {% for skill in resume.skills %}
+        <div class="skill-group">
+          <div class="skill-group-title">{{ skill[0] }}</div>
+          <ul class="skill-list">
+            {% for item in skill[1].split(',') %}
+            <li>{{ item.strip() }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+
+    </aside>
+
+    <main class="right-column">
+      
+      <section>
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">{{ resume.summary }}</p>
+      </section>
+
+      <section>
+        <div class="section-title">Professional Experience</div>
+
+        {% for job in resume.experience %}
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">{{ job.role }}</span>
+            <span class="job-date">{{ job.dates }}</span>
+          </div>
+          <div class="job-company">{{ job.company }} | {{ job.location }}</div>
+          <ul class="job-bullets">
+            {% for bullet in job.bullets %}
+            <li>{{ bullet }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+
+      </section>
+
+    </main>
+
+  </div>
+
+</div>
+
+</body>
+</html>

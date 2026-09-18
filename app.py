@@ -32,7 +32,7 @@ from ai_generator import generate_application_data
 # ==============================================================================
 # CONFIGURATION & GLOBAL SETUP
 # ==============================================================================
-AUTH_TOKEN = "123"  # Replace with your actual security token
+AUTH_TOKEN = "0011"  # Replace with your actual security token
 INPUT_DIR = Path("input")
 INPUT_DIR.mkdir(parents=True, exist_ok=True)
 
