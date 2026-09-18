@@ -1,0 +1,7 @@
+google-genai
+pydantic
+jinja2
+playwright
+python-dotenv
+streamlit
+streamlit-pdf-viewer

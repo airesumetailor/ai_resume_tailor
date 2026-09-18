@@ -1,0 +1,70 @@
+Software Engineer, Ios Core Product - Helsinki, Finland
+Save
+Speechify
+Helsinki, FI181
+24 July
+Apply on LinkedIn
+Employment type:
+Full-time
+Job description
+The mission of Speechify is to make sure that reading is never a barrier to learning.
+
+Over 50 million people use Speechify’s text-to-speech products to turn whatever they’re reading – PDFs, books, Google Docs, news articles, websites – into audio, so they can read faster, read more, and remember more. Speechify’s text-to-speech reading products include its iOS app, Android App, Mac App, Chrome Extension, and Web App. Google recently named Speechify the Chrome Extension of the Year and Apple named Speechify its App of the Day.
+
+Today, nearly 200 people around the globe work on Speechify in a 100% distributed setting – Speechify has no office. These include frontend and backend engineers, AI research scientists, and others from Amazon, Microsoft, and Google, leading PhD programs like Stanford, high growth startups like Stripe, Vercel, Bolt, and many founders of their own companies.
+
+Overview
+
+With the growth of our iOS app, being the #18 productivity app in the App Store category and also our recent recognition as Apple's 2025 Design Award for inclusivity, we find the need for a Senior iOS Engineer to help us support the new user base as well as work on new and exciting projects to push our missing forward.
+
+This is a key role and ideal for someone who thinks strategically, enjoys fast-paced environments, passionate about making product decisions, and has experience building great user experiences that delight users.
+
+We are a flat organization that allows anyone to become a leader by showing excellent technical skills and delivering results consistently and fast. Work ethic, solid communication skills, and obsession with winning are paramount.
+
+Our interview process involves several technical interviews and we aim to complete them within 1 week.
+
+What You’ll Do
+
+Opportunity to lead key engineering and product decisions
+Actively shipping production code for the Speechify iOS app
+Work within a dedicated product team
+Participate in product discussions to shape the product roadmap
+Maintain and enhance the existing complex app architecture
+
+An Ideal Candidate Should Have
+
+Experience. You've worked on products that scaled to a large user base
+Track record. You have worked on various products from inception to decent traction. You have been responsible for engineering the product
+Customer obsession. We expect every team member whose responsibilities directly impact customers to be constantly obsessed about providing the best possible experience
+Product thinking. You make thoughtful decisions about the evolution of your product and support internal teams and designers into taking the right direction
+Speed. You work quickly to generate ideas and know how to decide which things can ship now and what things need time
+Focus. We’re a high-growth startup with a busy, remote team. You know how and when to engage or be heads down
+Technical skills. Swift, SwiftUI
+
+Technical Requirements:
+
+Swift Programming Language
+SwiftUI experience
+Experience in Multithreading Programming
+Working with CI/CD infrastructure
+Experience with Fastlane
+SOLID principles, the ability to write every single class according to SOLID
+Experience with Git and understanding of different Git strategies
+
+What We offer:
+
+A fast-growing environment where you can help shape the company and product
+An entrepreneurial crew that supports risk, intuition, and hustle
+The opportunity to make a big impact in a transformative industry
+A competitive salary, a collegiate atmosphere, and a commitment to building a great asynchronous culture
+Work on a product that millions of people use and where daily feedback includes users sharing that they cried when they first found the product because it was so impactful on their lives
+Support people with learning differences like Dyslexia, ADD, Low Vision, Concussions, Autism, and Second Language Learners, and give reading superpowers to professionals all over the world
+Work in one of the fastest growing sectors of tech: Intersection of Artificial Intelligence and Audio
+
+The Finland Based Salary range for this role is: 30,000-100,000 USD/Year + Bonus + Stock depending on experience.
+
+Think you’re a good fit for this job?
+
+Tell us more about yourself and why you're interested in the role when you apply.
+
+And don’t forget to include links to your portfolio and LinkedIn.

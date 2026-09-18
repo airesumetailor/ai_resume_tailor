@@ -1,0 +1,76 @@
+{
+  "header": {
+    "name": "Greeshma Sheeja Sajeevan",
+    "title": "Quality Assurance Lead / Senior Software Test Engineer",
+    "location": "Vaasa, Finland",
+    "phone": "+358 41 5802094",
+    "email": "greeshmaag86@gmail.com",
+    "work_rights": "Work Rights: Master's Student in Finland with Student Residence Permit (Eligible to work in Finland, available for full-time/part-time work)"
+  },
+  "summary": "Results-driven Quality Assurance Lead and Master's student in Project Management at Vaasa University of Applied Sciences with over 7 years of software testing and engineering leadership experience across global IT firms[cite: 1]. Proven track record in test design, team management, defect tracking, and end-to-end quality assurance[cite: 1]. Highly skilled in manual testing, test strategy execution, Agile/Scrum methodologies, and cross-functional team coordination[cite: 1]. Seeking opportunities in software testing, project coordination, or campus support operations[cite: 1].",
+  "skills": [
+    [
+      "Testing Frameworks & Tools:",
+      "Manual Testing, Test Case Execution, Defect Tracking, Agile/Scrum, JIRA, Postman, SoapUI, TestRail, ATF Scripting, BrowserStack"
+    ],
+    [
+      "Methodologies & Testing:",
+      "Integration Testing, Regression Testing, System Testing, End-to-End Verification, TDD, Configuration Testing, Web Services Testing"
+    ],
+    [
+      "Management & Soft Skills:",
+      "Team Leadership, Stakeholder Communication, Project Documentation, Risk Assessment, Team Building, Problem-Solving"
+    ],
+    [
+      "Languages:",
+      "English (Fluent), Finnish (Learning)"
+    ]
+  ],
+  "experience": [
+    {
+      "company": "Experion Technologies (India) Pvt. Ltd.",
+      "role": "Test Lead",
+      "dates": "Oct 2025 - Apr 2026",
+      "location": "Trivandrum, Kerala, India",
+      "bullets": [
+        "Led QA planning, test design, and execution across end-to-end software development lifecycles[cite: 1].",
+        "Coordinated cross-functional teams to align quality standards with client project milestones[cite: 1]."
+      ]
+    },
+    {
+      "company": "Quest Global Engineering Services",
+      "role": "Lead Engineer / Deputy QA Lead",
+      "dates": "Sep 2022 - Aug 2023",
+      "location": "Bangalore, India",
+      "bullets": [
+        "Managed testing teams, prepared comprehensive test strategies, and minimized product defect rates[cite: 1].",
+        "Communicated directly with key technical stakeholders to report quality metrics and delivery timelines[cite: 1].",
+        "Implemented Test Driven Development practices, analyzed requirements, designed test cases, and developed ATF scripts[cite: 2].",
+        "Developed and maintained traceability matrixes linking requirements to test cases and performed Unit, Integration, Sub System, and Regression Testing[cite: 2]."
+      ]
+    },
+    {
+      "company": "UST (US Technology International)",
+      "role": "Tester II - Software Testing",
+      "dates": "Nov 2015 - Aug 2022",
+      "location": "Trivandrum, India",
+      "bullets": [
+        "Performed extensive functional, integration, regression, and web services testing for enterprise healthcare and cloud platforms[cite: 1, 2].",
+        "Authored detailed test cases, logged software anomalies in JIRA/HP Quality Center, and collaborated with developers on root cause analysis and bug fixes[cite: 1, 2].",
+        "Tested and validated HealthEdge, HRP UI, and EDA 270/271, 276/277 request-response files across Patient Management, Doctor, Admin, and Insurance Claims modules[cite: 2].",
+        "Conducted manual and exploratory testing for web applications, maintaining detailed bug logs and tracking severity and priority[cite: 2].",
+        "Executed hardware validation and IoT application testing on mobile platforms[cite: 2]."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Engineering in Project Management",
+      "details": "Vaasa University of Applied Sciences (VAMK), Vaasa, Finland | Aug 2026 - Present"
+    },
+    {
+      "degree": "Bachelor of Engineering (B.E.) - Computer Science & Engineering",
+      "details": "Narayana Guru College of Engineering, Anna University, Tamil Nadu, India | Aug 2011 - Apr 2015"
+    }
+  ]
+}
