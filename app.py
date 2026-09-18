@@ -1,4 +1,13 @@
 import os
+import subprocess
+
+# Ensure Playwright Chromium binary is installed
+try:
+    subprocess.run(["playwright", "install", "chromium"], check=True)
+except Exception as e:
+    print(f"Playwright browser install warning: {e}")
+
+import os
 import re
 import io
 import json
